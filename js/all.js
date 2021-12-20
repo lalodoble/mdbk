@@ -174,11 +174,13 @@
 
 		var headerH = $('.prague-header').outerHeight() || 0;
 
-		if ($(this).scrollTop() >= ($('.internal-menu-container').offset().top - headerH)) {
-			$('.internal-menu-container').addClass('sticky');
-			$('.internal-menu').css('top', headerH + 'px');
-		} else {
-			$('.internal-menu-container').removeClass('sticky');
+		if ($('.internal-menu-container').length > 0) {
+			if ($(this).scrollTop() >= ($('.internal-menu-container').offset().top - headerH)) {
+				$('.internal-menu-container').addClass('sticky');
+				$('.internal-menu').css('top', headerH + 'px');
+			} else {
+				$('.internal-menu-container').removeClass('sticky');
+			}
 		}
 	});
 
