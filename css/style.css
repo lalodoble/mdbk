@@ -17588,6 +17588,7 @@ NEW CSS
 	list-style: none;
 	margin: 0;
 	z-index: 999;
+	flex-wrap: wrap;
 }
 
 .internal-menu-container.sticky .internal-menu {
@@ -17615,4 +17616,33 @@ NEW CSS
 
 .internal-menu li a.active {
 	box-shadow: inset 0 0 0 3px #000;
+}
+
+@media(max-width: 640px) {
+	.internal-menu li {
+		padding: 9px;
+	}
+	.internal-menu li a {
+		padding: 4px 12px;;
+	}
+}
+
+/*=================================================================================================
+MAIN BG
+=================================================================================================*/
+
+#main-bg {
+	width: 100%;
+    height: 100%;
+    position: absolute;
+    background-size: cover;
+    background-position: center center;
+	
+	background-image: url('../img/bg-main.jpg');
+}
+
+@media (orientation: portrait) {
+	#main-bg {
+		background-image: url('../img/bg-main-mobile.jpeg');
+	}
 }
