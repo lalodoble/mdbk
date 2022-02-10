@@ -5836,9 +5836,9 @@ a:hover, a:focus {
 		line-height: 1.4em;
 	}
 
-	.testimonials-swiper {
+	/* .testimonials-swiper {
 		pointer-events: none;
-	}
+	} */
 }
 
 /*-------------------------------------------------------*/
@@ -17587,7 +17587,7 @@ NEW CSS
 	justify-content: center;
 	list-style: none;
 	margin: 0;
-	z-index: 999;
+	z-index: 98;
 	flex-wrap: wrap;
 }
 
