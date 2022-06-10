@@ -198,7 +198,8 @@
 					<div class="prague-formidable  vc_formidable">
 						<div class="frm_forms  with_frm_style frm_style_formidable-style-2-2" id="frm_form_4_container">
 							<form enctype="multipart/form-data" action="contact.php" method="post" class="frm-show-form contact-me-form"
-								id="form_t1e6y">
+								id="form_t1e6y"
+								onsubmit="return submitUserForm();">
 								<div class="frm_form_fields ">
 									<fieldset>
 
@@ -258,8 +259,13 @@
 
 
 													</div>
+													<div class="frm_form_field form-field  frm_required_field frm_none_container">
+														<div class="g-recaptcha" data-sitekey="6Ldp6VogAAAAAKQjfhNXpfl-KC1-8q1SuNPaxU11" data-callback="verifyCaptcha"></div>
+														<div id="g-recaptcha-error"></div>
+													</div>
 												</div>
 											</div>
+												
 											<input type="hidden" name="item_key" value="" />
 											<div class="frm_submit">
 
@@ -360,6 +366,22 @@
 	<script src="js/foxlazy.min.js"></script>
 	<script src="js/jquery.magnific-popup.min.js"></script>
 	<script src="js/all.js"></script>
+	<script src='https://www.google.com/recaptcha/api.js'></script>
+	<script>
+	var recaptcha_response = '';
+	function submitUserForm() {
+		if(recaptcha_response.length == 0) {
+			document.getElementById('g-recaptcha-error').innerHTML = '<span style="color:red;">This field is required.</span>';
+			return false;
+		}
+		return true;
+	}
+	 
+	function verifyCaptcha(token) {
+		recaptcha_response = token;
+		document.getElementById('g-recaptcha-error').innerHTML = '';
+	}
+	</script>
 </body>
 
 </html>
