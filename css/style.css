@@ -4773,15 +4773,15 @@ a:hover, a:focus {
 }
 
 .top-banner .banner-columns {
-	max-width: 1170px;
+	max-width: 1970px;
 	margin-top: 140px;
 }
 
 .top-banner .banner-columns .banner-col-item {
 	display: inline-block;
 	text-align: left;
-	min-width: 200px;
-	padding-left: 15px;
+	min-width: 250px;
+	padding-left: 100px;
 	padding-bottom: 30px;
 }
 
@@ -4793,7 +4793,7 @@ a:hover, a:focus {
 	content: '';
 	position: absolute;
 	top: 0;
-	left: 15px;
+	left: 100px;
 	height: 1px;
 	width: 70px;
 }
