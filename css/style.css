@@ -12541,6 +12541,16 @@ a:hover, a:focus {
 	max-width: none;
 }
 
+@media only screen and (min-width: 991px) {
+	.projects-detail-before-banner .ba-slider {
+		max-height: 600px;
+		max-width: 600px;
+		margin-left:25%;
+		background-size: initial;
+		background-position: initial;
+	}
+}
+
 .projects-detail-before-banner .ba-slider {
 	height: 100%;
 	background-size: initial;
