@@ -5641,16 +5641,17 @@ a:hover, a:focus {
 /* TESTIMONIALS */
 /*-------------------------------------------------------*/
 .testimonials-wrapper {
-	position: relative;
-	padding: 17px 70px 85px 23%;
+	/* position: relative;
+	padding: 17px 70px 85px 23%; */
 }
 
 .testimonials-wrapper.no-figure {
-	padding: 17px 0 40px 23%;
+	/* padding: 17px 0 40px 23%; */
 }
 
 .testimonials-wrapper.no-figure .testimonials-pagination-wrapper {
-	height: calc(100% - 40px);
+	display:none;
+	/* height: calc(100% - 40px); */
 }
 
 .testimonials-wrapper .testimonials-swiper {
@@ -5980,11 +5981,12 @@ a:hover, a:focus {
 @media only screen and (max-width: 767px) {
 	.team-wrapper {
 		max-width: 370px;
-		margin-left: auto;
-		margin-right: auto;
+		margin-left: 20px;
+		margin-right: 20px;
 	}
 	.team-wrapper .team-outer {
-		height: 380px !important;
+		height: 350px !important;
+		width: 350px !important;
 	}
 	.team-wrapper.circle .team-outer {
 		height: 270px !important;
